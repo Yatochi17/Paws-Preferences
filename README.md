@@ -3,7 +3,7 @@
 A fun cat-swiping web app inspired by popular dating apps. Swipe right to like, left to pass!
 
 ## 🚀 Live Demo
-[View Live App](https://yourusername.github.io/paws-and-preferences)
+[View Live App](https://yatochi17.github.io/Paws-Preferences/)
 
 ## ✨ Features
 - Swipe gestures (touch & mouse support)
