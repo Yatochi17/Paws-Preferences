@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Preferences 🐱</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 
+        CAT TINDER-LIKE APP STRUCTURE
+        This app allows users to swipe through cat images and like/dislike them
+        Features: card stacking, swipe gestures, progress tracking, and summary screen
+    -->
+    
+    <!-- Main container that centers the entire app -->
+    <div class="container">
+        
+        <!-- App header with title and instructions -->
+        <header class="header" id="header">
+            <h1>🐱 Paws & Preferences</h1>
+            <p>Swipe right to like, left to pass</p>
+        </header>
+
+        <!-- Loading screen shown while fetching cat images -->
+        <div class="loading" id="loading">
+            Loading adorable cats... 🐾
+        </div>
+
+        <!-- 
+            MAIN APP CONTAINER 
+            Hidden initially, shown after images load
+        -->
+        <main id="app" style="display: none;">
+            
+            <!-- Shows current position (e.g., "1/15") -->
+            <div class="counter" id="counter"></div>
+            
+            <!-- Visual progress indicator -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <!-- 
+                CARD STACK CONTAINER
+                Where the swipeable cards are dynamically inserted
+                Handles both mouse and touch events
+            -->
+            <div class="card-stack" id="cardStack"></div>
+
+            <!-- 
+                ACTION BUTTONS 
+                Alternative to swiping - for button-based interaction
+            -->
+            <div class="buttons" id="buttons">
+                <button class="btn btn-dislike" id="btnDislike" aria-label="Dislike">✕</button>
+                <button class="btn btn-like" id="btnLike" aria-label="Like">♥</button>
+            </div>
+
+            <!-- 
+                SUMMARY SCREEN
+                Shown after all cards have been reviewed
+                Displays statistics and liked cats
+            -->
+            <section class="summary" id="summary">
+                <h2>Your Cat Preferences! 🎉</h2>
+                <div class="stats" id="stats"></div>
+                <div class="liked-cats" id="likedCats"></div>
+                <button class="btn-restart" id="btnRestart">Start Over</button>
+            </section>
+        </main>
+    </div>
+
+    <!-- Main application logic -->
+    <script src="script.js"></script>
+</body>
+</html>
